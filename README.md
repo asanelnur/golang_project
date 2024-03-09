@@ -1,12 +1,14 @@
 # golang_project: Online book store
 
 ## REST API:
+```
 POST /category
 GET /category/:id
 PUT /category/:id
 DELETE /category/:id
-
+```
 ## DB Structure:
+```
 TABLE categories (
     id          bigserial [PRIMARY KEY],
     created_at  timestamp,
@@ -41,3 +43,4 @@ TABLE books (
 
 REF: books.author < author.id
 REF: books.category < category.id
+```
