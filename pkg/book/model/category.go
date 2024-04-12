@@ -22,7 +22,6 @@ type CategoryModel struct {
 }
 
 func (m CategoryModel) Insert(category *Category) error {
-	// Insert a new category item into the database.
 	query := `
 		INSERT INTO categories (title, description) 
 		VALUES ($1, $2) 
@@ -36,7 +35,6 @@ func (m CategoryModel) Insert(category *Category) error {
 }
 
 func (m CategoryModel) Get(id int) (*Category, error) {
-	// Retrieve a specific category item based on its ID.
 	query := `
 		SELECT id, created_at, updated_at, title, description
 		FROM categories
@@ -69,7 +67,6 @@ func (m CategoryModel) Update(category *Category) error {
 }
 
 func (m CategoryModel) Delete(id int) error {
-	// Delete a specific category item from the database.
 	query := `
 		DELETE FROM categories
 		WHERE id = $1
