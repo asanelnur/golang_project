@@ -5,10 +5,23 @@
 
 ## REST API:
 ```
-POST /category
-GET /category/:id
-PUT /category/:id
+http://localhost:8081/api/v1
+
+Category:
+GET    /category
+POST   /category
+GET    /category/:id
+PUT    /category/:id
 DELETE /category/:id
+GET    /category/:id/books
+
+Book:
+GET    /book
+POST   /book
+GET    /book/:id
+PUT    /book/:id
+DELETE /book/:id
+
 ```
 ## DB Structure:
 ```
