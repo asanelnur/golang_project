@@ -22,6 +22,11 @@ GET    /book/:id
 PUT    /book/:id
 DELETE /book/:id
 
+Auth:
+POST    /users
+PUT     /users/activated
+POST    /users/login
+
 ```
 ## DB Structure:
 ```
